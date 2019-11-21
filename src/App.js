@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import Profiles from './Profiles';
 import Jobs from './Jobs';
+import Back from './Back';
 import logo from './logo.svg';
 import './App.css';
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
       <BrowserRouter>
       
         <div className="container">
+          
           <div className="menu">
 
             <ul>
@@ -32,6 +34,9 @@ class App extends React.Component {
             <Route exact path="/" component={Home} />
             <Route path="/jobs" component={Jobs} />
             <Route path="/profiles" component={Profiles} />
+          </div>
+          <div className="footer">
+          <Back />
           </div>
         </div>
       </BrowserRouter>
